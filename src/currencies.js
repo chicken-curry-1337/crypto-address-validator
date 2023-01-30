@@ -16,6 +16,7 @@ var USDTValidator = require("./usdt_validator");
 var AlgoValidator = require("./algo_validator");
 var DotValidator = require("./dot_validator");
 var ATOMValidator = require("./atom_validator");
+var NewtonValidator = require("./ton_validator");
 var BIP173Validator = require("./bip173_validator");
 var Base58Validator = require("./base58_validator");
 
@@ -721,6 +722,11 @@ var CURRENCIES = [
         name: "Cosmos",
         symbol: "atom",
         validator: ATOMValidator,
+    },
+    {
+        name: "Newton",
+        symbol: "ton",
+        validator: NewtonValidator,
     },
 ];
 
