@@ -23339,7 +23339,6 @@ var CURRENCIES = [
         symbol: "ton",
         validator: NewtonValidator,
     },
-    ,
     {
         name: "Near",
         symbol: "near",
