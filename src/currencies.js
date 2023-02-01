@@ -308,7 +308,10 @@ var CURRENCIES = [
     {
         name: "Cardano",
         symbol: "ada",
-        bech32Hrp: { prod: ["addr"], testnet: ["addr"] },
+        bech32Hrp: {
+            prod: ["addr", "stake"],
+            testnet: ["addr_test", "stake_test"],
+        },
         validator: ADAValidator,
     },
     {
