@@ -503,7 +503,15 @@ describe("WAValidator.validate()", function () {
 
         it("should return true for correct Cardano addresses", function () {
             valid(
-                "Ae2tdPwUPEYzs5BRbGcoS3DXvK8mwgggmESz4HqUwMyaS9eNksZGz1LMS9v",
+                "stake178phkx6acpnf78fuvxn0mkew3l0fd058hzquvz7w36x4gtcccycj5",
+                "ada"
+            );
+            valid(
+                "stake1uyehkck0lajq8gr28t9uxnuvgcqrc6070x3k9r8048z8y5gh6ffgw",
+                "ada"
+            );
+            valid(
+                "addr1qx2fxv2umyhttkxyxp8x0dlpdt3k6cwng5pxj3jhsydzer3n0d3vllmyqwsx5wktcd8cc3sq835lu7drv2xwl2wywfgse35a3x",
                 "ada"
             );
             valid(
@@ -528,7 +536,12 @@ describe("WAValidator.validate()", function () {
                 "cardano"
             );
             valid(
-                "addr1skemppwfevyk0lshu2w8j34707s3t3t58a04xcx5ccevrcmvpmxg2qt4pk0",
+                "addr_test1qz2fxv2umyhttkxyxp8x0dlpdt3k6cwng5pxj3jhsydzer3n0d3vllmyqwsx5wktcd8cc3sq835lu7drv2xwl2wywfgs68faae",
+                "cardano",
+                "testnet"
+            );
+            valid(
+                "stake_test17rphkx6acpnf78fuvxn0mkew3l0fd058hzquvz7w36x4gtcljw6kf",
                 "cardano",
                 "testnet"
             );
